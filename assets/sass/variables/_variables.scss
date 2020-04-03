@@ -1,0 +1,105 @@
+$primary-font: 'Neue Einstellung', sans-serif !default;
+
+$second-font: 'Libre Franklin', !default;
+
+$icon-font: 'simple-line-icons', !default;
+
+$primary-color: #48CAB2 !default;
+
+$alternative-color: #fbbc34 !default;
+
+$color-text-main: #777777 !default;
+
+$menu-color: #222222 !default;
+
+$heading-color: #333333 !default;
+
+$page-heading-color: #000;
+
+$header-text-color: #000 !default;
+
+$promo-background: #dc6978 !default;
+
+$promo-text-color: #8f8f8f !default;
+
+$topbar-background: #222 !default;
+
+$topbar-color: #bababa !default;
+
+$footer-text-color: #777777 !default;
+$footer-title-color: #333333 !default;
+$footer-link-color: #777777 !default;
+
+$white: #fff !default;
+$dark: #000 !default;
+
+
+
+//Extend variables
+.background-primary-color{
+	background-color: $primary-color;
+}
+.border-primary-color{
+	border-color: $primary-color;
+}
+.color-primary-color{
+	color: $primary-color;
+}
+
+
+.background-primary-color-ipt{
+  background-color: $primary-color !important;
+}
+
+.border-primary-color-ipt{
+  border-color: $primary-color !important;
+}
+
+.color-primary-color-ipt{
+    color: $primary-color !important;
+}
+
+
+.background-body-color{
+	background-color: $color-text-main;
+}
+.border-body-color{
+	border-color: $color-text-main;
+}
+.color-body-color{
+	color: $color-text-main;
+}
+
+.yanka-font-icon{
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'yanka';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+}
+
+.font-icon{
+	display: inline-block;
+	font-family: 'Pe-icon-7-stroke';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+}
+.font-icon2{
+	font-family: $icon-font;
+}
+.primary-font{
+	font-family: $primary-font;
+}
+.font-primary {
+    font-family: $primary-font !important;
+}
+.second-font{
+	font-family: $second-font;
+}

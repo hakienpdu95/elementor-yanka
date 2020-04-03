@@ -1,0 +1,90 @@
+.star-rating {
+	font-family: 'fyanka';
+	font-size: 16px;
+	height: 25px;
+	line-height: 22px;
+	overflow: hidden;
+	position: relative;
+	text-align: left;
+	width: 5.8em;
+	letter-spacing: 3px;
+	margin-top: 5px;
+}
+.star-rating:before,
+.star-rating span:before {
+	content: '\e901\e901\e901\e901\e901';
+	left: 0;
+	top: 0;
+	position: absolute;
+}
+.star-rating:before {
+	color: #ffba0a;
+}
+.star-rating span {
+	overflow: hidden;
+	position: absolute;
+	text-indent: -999em;
+}
+.star-rating span:before {
+	color: #ffba0a;
+	text-indent: 0;
+	text-indent: inherit;
+}
+
+
+p.stars {
+	a {
+		position: relative;
+		height: 1em;
+		width: 1em;
+		text-indent: -999em;
+		display: inline-block;
+		text-decoration: none;
+
+		&::before {
+			display: block;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 1em;
+			height: 1em;
+			line-height: 1;
+			font-family: 'fyanka';
+			content: '\e901';
+			text-indent: 0;
+			color: #999;
+		}
+
+		&:hover ~ a::before {
+			color: #999;
+		}
+	}
+
+	&:hover a::before {
+		color: #ffba0a;
+	}
+
+	&.selected {
+		a.active {
+			&::before {
+				color: #ffba0a;
+			}
+
+			~ a::before {
+				color: #999;
+			}
+		}
+
+		a:not( .active )::before {
+			color: #ffba0a;
+		}
+	}
+}
+
+
+.woocommerce-Reviews-title {
+    margin-top: 0;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 700;
+}

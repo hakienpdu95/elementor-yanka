@@ -1,0 +1,175 @@
+.page-heading {
+    
+    margin: 0 !important;
+    .entry-header{
+        position: relative;
+    }
+    .subtitle-page{
+        margin-bottom: 20px;
+        font-weight: 500;
+        color: $color-text-main;
+    }
+
+    // Title size
+    &.title-size-default {
+        padding-top: 90px;
+        padding-bottom: 57px;
+    }
+
+    &.title-size-small {
+        padding-top: 20px;
+        padding-bottom: 20px;
+
+        h1 {
+            font-size: 27px;
+        }
+    }
+
+    &.title-size-medium {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    &.title-size-large {
+        padding-top: 40px;
+        padding-bottom: 40px;
+
+        h1 {
+            font-size: 50px;
+        }
+    }
+
+    //Title align
+    &.title-align-left {
+        text-align: left;
+    }
+
+    &.title-align-centered {
+        text-align: center;
+    }
+
+    &.title-align-right {
+        text-align: right;
+    }
+
+    &.title-align-vertical {
+        .breadcrumb, .woocommerce-breadcrumb{
+            position: absolute;
+            right: 0;
+            top: 50%;
+            margin-top: -12px;
+        }
+        .subtitle-page{
+            margin-bottom: 0;
+        }
+    }
+
+    h1 {
+        margin: 0;
+        line-height: 43px;
+        font-weight: 800;
+        font-size: 36px;
+    }
+    a{
+        color: #8f8f8f;
+        &:hover{
+            @extend .color-primary-color;
+        }
+    }
+}
+
+.pt-breadcrumb {
+    background-color: #f8f8f8;
+
+    a {
+        color: #777777;    
+    }
+}
+.breadcrumb,
+.woocommerce-breadcrumb {
+    font-size: 12px;
+    padding: 0;
+    margin-bottom: 0;
+    color: #777777;
+    font-weight: 400;
+    line-height: 30px;
+    
+    span:before{
+        content:"/";
+        margin: 0 5px;
+    }
+}
+
+.yanka-checkout-steps {
+
+	ul {
+		list-style: none;
+        margin: 0;
+        padding: 0;
+
+		li {
+			display: inline-block;
+			margin-top: 5px;
+			margin-bottom: 5px;
+			line-height: 1.2;
+
+            a, span {
+                text-transform: uppercase;
+                font-size: 20px;
+                font-weight: 600;
+            }
+
+			a {
+				display: inline-block;
+				color: inherit;
+				opacity: 0.7;
+
+				&:hover,
+				&:focus {
+					color: inherit;
+					opacity: 1;
+				}
+			}
+
+			> span {
+				opacity: 0.7;
+			}
+
+			&:after {
+                content: '\f178';
+                font-family: 'FontAweSome';
+                opacity: 0.7;
+                font-weight: bold;
+                font-size: 85%;
+                margin: 0 15px;
+                position: relative;
+                top: -2px;
+			}
+
+			&:last-child {
+
+				&:after {
+					content: none;
+				}
+			}
+		}
+
+		.step-active {
+			a,
+			> span {
+				opacity: 1;
+			}
+		}
+	}
+}
+@media screen and (max-width: 767px) {
+    .page-heading.title-align-vertical, 
+    .page-heading.title-align-vertical{
+        text-align: center;
+        .breadcrumb,
+        .woocommerce-breadcrumb{
+            position: static;
+            margin-top: 10px;
+        }
+    }
+}

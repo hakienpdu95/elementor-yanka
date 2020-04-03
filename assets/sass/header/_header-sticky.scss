@@ -1,0 +1,127 @@
+.header-sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 390;
+    opacity: 0;
+    /*opacity: 0;
+    visibility: hidden;*/
+    display: none;
+    pointer-events: none;
+    -webkit-box-shadow: 0 0 8px rgba(0,0,0,.3);
+    box-shadow: 0 0 8px rgba(0,0,0,.3);
+    background-color: white;
+    @include transform(translateY(-100%));
+    @include transition(all 0.5s ease);
+
+    &.show {
+        /*opacity: 1;
+        visibility: visible;*/
+        opacity: 1;
+        display: block;
+        pointer-events: inherit;
+        @include transform(translateY(0));
+    }
+
+    .wrap-header {
+        padding-top: 1px;
+        padding-bottom: 1px;
+
+        .header-position.main-navigation {
+            -webkit-box-flex: 2;
+            -ms-flex: 2 1 auto;
+            flex: 2 1 auto;
+
+            .yanka-menu.primary-menu {
+                > li {
+                    &.menu-home .dropdown-menu {
+                        -webkit-transform: translateX(0%);
+                        -moz-transform: translateX(0%);
+                        -o-transform: translateX(0%);
+                        transform: translateX(0%);
+                    }
+                }
+
+                &.menu-center {
+                    justify-content: left;
+                }
+            } 
+        }
+        .header-wishlist {
+            a {
+                span {
+                    background-color: transparent;
+                    color: #333333;
+                    top: 4px;
+                    right: -15px;
+                }
+            }
+        }
+        .header-cart {
+            .cart-count {
+                background-color: transparent;
+                color: #333333 !important;
+                top: 4px;
+                right: -15px;                
+            }
+        }
+        .search-icon-popup {
+            line-height: 50px;
+        }
+        .icon-search:before {
+            top: 0;
+        }
+        .btn-group {
+            > a {
+                line-height: 50px;
+            }
+        }
+    }
+    .yanka-menu.primary-menu .dropdown-menu {
+        padding: 0;
+        margin-top: 0;
+    }
+
+    .yanka-menu.primary-menu {
+        > li {
+            > a {
+                line-height: 50px;
+            }
+        }
+    }
+}
+
+.header-sticky-mobile {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 390;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    box-shadow: 0 1px 3px rgba(0,0,0,.1);
+    background-color: white;
+    @include transform(translateY(-80%));
+    @include transition(all 0.5s ease);    
+
+    &.show {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: inherit;
+        @include transform(translateY(0));
+    }    
+}
+
+@media screen and (min-width: 1026px) {
+    .header-sticky-mobile {
+        &.show {
+            opacity: 0;
+            visibility: hidden;
+        }
+    }
+}
+.admin-bar .header-sticky {
+    top: 32px;
+}

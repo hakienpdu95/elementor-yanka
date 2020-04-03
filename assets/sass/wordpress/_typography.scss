@@ -1,0 +1,46 @@
+/* ==========================================================================
+   1.2 TYPOGRAPHY
+   ========================================================================== */
+
+
+@font-face {
+  font-family: "Neue Einstellung";
+  font-display: swap;
+  src: local('Neue Einstellung Normal'), url('assets/fonts/neue-einstellung/neue-einstellung-normal.eot');
+  src: local('Neue Einstellung Normal'), url('assets/fonts/neue-einstellung/neue-einstellung-normal.woff2') format('woff2'), url('assets/fonts/neue-einstellung/neue-einstellung-normal.woff') format('woff'), url('assets/fonts/neue-einstellung/neue-einstellung-normal.ttf')  format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Neue Einstellung";
+  font-display: swap;
+  src: local('Neue Einstellung Bold'), url('assets/fonts/neue-einstellung/neue-einstellung-extra-bold.eot');
+  src: local('Neue Einstellung Bold'), url('assets/fonts/neue-einstellung/neue-einstellung-extra-bold.woff2') format('woff2'), url('assets/fonts/neue-einstellung/neue-einstellung-extra-bold.woff') format('woff'), url('assets/fonts/neue-einstellung/neue-einstellung-extra-bold.ttf')  format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+
+@font-face { 
+  font-family: 'yanka'; 
+  font-display: swap; 
+  src: local("yanka"), url("assets/fonts/yanka-icons/yanka.eot"); 
+  src: local("yanka"), url("assets/fonts/yanka-icons/yanka.eot") format("embedded-opentype"), url("assets/fonts/yanka-icons/yanka.ttf")
+  format("truetype"), url("assets/fonts/yanka-icons/yanka.woff") format("woff"); 
+  font-weight: normal; 
+  font-style: normal; 
+}
+
+
+/*
+  Icon Fonts
+*/
+@font-face {
+  font-family: 'fyanka';
+  src:  url('assets/fonts/fyanka.eot?j4fejh');
+  src:  url('assets/fonts/fyanka.eot?j4fejh#iefix') format('embedded-opentype'),
+    url('assets/fonts/fyanka.ttf?j4fejh') format('truetype'),
+    url('assets/fonts/fyanka.woff?j4fejh') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}

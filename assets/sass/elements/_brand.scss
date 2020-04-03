@@ -1,0 +1,13 @@
+.jmsbrand-box {
+    .owl-carousel .owl-item {
+        img {
+            display: inline-block;
+            max-width: 100%;
+            width: auto;
+        }
+        &:hover img{
+            scale: 1.2;
+            opacity: 1;
+        }
+    }
+}

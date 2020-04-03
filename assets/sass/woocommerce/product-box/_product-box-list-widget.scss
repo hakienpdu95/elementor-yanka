@@ -1,0 +1,132 @@
+.product-style-list-box{
+	.product-thumb{
+		float: left;
+		width: 30%;
+	}
+	.product-list-info-box{
+		float: left;
+		width: 70%;
+		padding-left: 15px;
+	}
+	.addtocart{
+		position: static;
+		opacity: 1;
+		.button-cart{
+			color: #222;
+			&:hover{
+				@extend .color-primary-color;
+			}
+		}
+	}
+}
+.product-list-info-box .addtocart {
+	margin-top: 10px;
+	.button-cart{ 
+		border: 1px solid #ccc;
+		border-radius: 5px;
+		.tooltip{
+		    position: inherit;
+		    font-size: 13px !important;
+		    opacity: 1;
+		    background: transparent;
+		    width: auto;
+		    height: auto;
+		    top: auto;
+		    left: auto;
+		    right: auto;
+		    padding: 0;
+		    border-radius: 0;
+		    text-transform: uppercase;
+		    font-weight: 500;
+		    @include transform(none);
+		    @extend .primary-font;
+		}
+		&:hover{
+			@extend .border-primary-color;
+			@extend .background-primary-color;
+			.tooltip{
+				color: #fff;
+			}
+		}
+		&:hover:before{
+			color: #fff;
+		}
+	}
+}
+
+.product-style-list-box{
+	&.product-style-list-1 {
+		.product-thumb {
+			width: 26.09%;
+		}
+		.product-list-info-box {
+			width: 73.91%;
+			padding-left: 20px;
+		}
+
+		.product-list-info-box {
+			> div.addtocart {
+				display: none;
+			}
+		}
+		.pt-row-hover {
+			.price {
+				margin-left: 0;
+				visibility: visible;
+			    opacity: 1;
+			    display: block;
+			    display: flex;
+
+			    ins {
+			    	color: #f8353e;
+			    }
+			    del {
+			    	margin-right: 8px;
+			    }
+			}
+			.button-cart {
+				display: none;
+			}
+		}
+		.product-list-info-top {
+			-ms-box-orient: horizontal;
+			display: -webkit-box;
+			display: -moz-box;
+			display: -ms-flexbox;
+			display: -moz-flex;
+			display: -webkit-flex;
+			display: flex;
+			  
+			-webkit-flex-flow: column;
+			flex-flow: column;
+
+			a.woocommerce-LoopProduct-link {
+				order: 2;
+				font-size: 16px;
+			    color: #333333;
+			    margin-top: -1px;
+
+			    &:hover {
+			    	@extend .color-primary-color;
+			    }
+			}
+
+			.product-cat {
+				order: 1;
+				margin-top: -5px;
+    			line-height: normal;
+			}
+
+			.star-rating {
+				order: 4;
+				margin-top: 9px;
+			}
+
+			.pt-row-hover {
+				order: 3;
+				margin-top: 5px;
+			}
+
+		}
+	}
+}

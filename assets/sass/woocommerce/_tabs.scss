@@ -1,0 +1,256 @@
+.product-detail-information {
+    max-width: 100% !important;
+    padding: 33px 0;
+    padding-bottom: 21px;
+    
+    .container {
+        width: inherit;
+    }
+
+    &.tabs-accordion {
+        .container {
+            padding-left: 0;
+        }
+    }
+
+    &.tabs-accordion-fullwidth {
+        margin-bottom: 71px;
+
+        .container {
+            padding-left: 15px;
+        }
+    }
+}
+
+.woocommerce-Tabs-panel {
+    > h2 {
+        display: none;
+    }
+
+    .woocommerce-Reviews-title {
+        display: none;
+    }
+}
+
+.woocommerce-tabs {
+    .woocommerce-Reviews {
+        .woocommerce-Reviews-title {
+            font-weight: 800;
+        }
+
+        .comment_container {
+            .avatar {
+                display: none;
+            }
+
+            .comment-text {
+                padding-left: 0;
+
+                .star-rating {
+                    float: none;
+                    clear: both;
+                    margin-bottom: 11px;
+                }
+
+                .meta {
+                    font-size: 14px;
+                    font-weight: 800;
+                    color: #333;
+                    margin-bottom: 19px;
+
+                    strong {
+                        font-weight: 800;
+                        text-transform: capitalize;
+                    }
+                }
+
+                .woocommerce-review__published-date {
+                    text-transform: capitalize;
+                    font-size: 14px;
+                    font-weight: 800;
+                    color: #333;
+                }
+                .description {
+                    font-size: 18px;
+                }
+            }
+        }
+
+        .commentlist {
+            .review {
+                background: #f8f8f8;
+                padding: 14px 20px 21px 20px;
+            }
+        }
+
+        #review_form {
+            .comment-respond {
+                label {
+                    font-size: 16px;
+                    font-weight: 400;
+                }
+
+                .comment-form {
+                    font-size: 16px;
+                    font-weight: 400;
+                        
+                    .comment-form-cookies-consent {
+                        input[type="checkbox"] {
+                            margin-top: 5px;
+                        }
+                        
+                        display: flex;
+
+                    }
+                    .form-submit {
+                        input[type="submit"] {
+                            font-size: 14px;
+                            font-weight: 800;
+                            text-transform: capitalize;
+                            min-height: 44px;
+                            line-height: 44px;
+                            padding: 0 22px;
+
+                            &:hover {
+                                background-color: #333;
+                            }
+                        }
+                    }
+                }
+                .comment-form-comment {
+                    margin-bottom: 30px;
+                }
+                .comment-form-rating label,
+                .comment-form-comment label {
+                    font-weight: 400;
+                    font-size: 16px;
+                }
+            }
+        }
+        #review_form_wrapper {
+            #reply-title {
+                font-weight: 800;
+                color: #333;
+            }
+        }        
+    }
+}
+// Tabs layout
+.tabs-layout-tabs {
+    .wc-tabs {
+        padding: 0;
+        list-style: none;
+        margin: 0px;
+        text-align: left;
+        
+        > li {
+            display: inline-block;
+			position: relative;
+			padding: 0 4px;
+			margin-bottom:0px;
+			border-bottom: none;
+			margin:0px 10px;
+            margin-bottom: -1px;
+            z-index: 99;
+            
+            &:hover,
+			&.active {
+                a {
+                    @extend .border-primary-color;
+                }
+			}
+            > a {
+                  display: inline-block;
+				  padding: 14px 0;
+				  font-size: 18px;
+				  font-weight: 800;
+				  text-transform: capitalize;
+				  color: #333333;
+                  border-bottom: 2px solid transparent;
+            }
+        }
+    }
+
+    .wc-body-tabs {
+        border-top: solid 1px #ebebeb;
+        margin-bottom: 75px;
+
+        .woocommerce-Reviews {
+            width: 100%;
+        }
+    }
+    .wc-accordion-content,
+    .tab-content {
+        position: relative;
+		padding-top: 47px;
+
+    }
+
+    .yikes-custom-woo-tab-title,
+    .woocommerce-Reviews-title {
+        display: none;
+    }
+
+    .woocommerce-Reviews,
+    #tab-additional_information .shop_attributes {
+        width: 60%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .tabs-layout-tabs .wc-tabs > li:first-child {
+        margin-left: 0;
+        padding-left: 0;
+    }
+}
+// Accordion tabs
+.tabs-layout-accordion {
+    .yanka-tab-wrapper {
+        
+    }
+}
+
+.yanka-accordion-title {
+    font-size: 18px;
+    font-weight: 800;
+    display: inline-block;
+    padding: 14px 0;
+
+    &.ting {
+        &:after {
+            content: url('assets/images/icons/ic-angle-up.png');    
+        }
+    }
+    &:after {
+        content: url('assets/images/icons/ic-angle-down.png');
+        margin-left: 8px;
+        font-size: 11px;
+        position: relative;
+        top: -1px;
+    }
+}
+
+#tab-additional_information .shop_attributes {
+
+    th, td {
+        padding: 15px 0;
+    }
+
+    th {
+        text-align: left;
+    }
+
+    td {
+        text-align: right;
+    }
+
+    tr:last-child td,
+    tr:last-child th {
+        border-bottom: none;
+    }
+
+    p {
+        margin-bottom: 0;
+    }
+}

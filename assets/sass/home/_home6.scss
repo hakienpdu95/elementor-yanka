@@ -1,0 +1,23 @@
+.header-6{
+	.menu-home-6 {
+		> .wrap-header {
+			justify-content: center;
+		}
+
+		.yanka-menu.primary-menu {
+			> li {
+				> a {
+					line-height: 46px;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 911px) {
+	.header-6 {
+		.menu-home-6 {
+			margin-top: -18px;
+		}
+	}
+}

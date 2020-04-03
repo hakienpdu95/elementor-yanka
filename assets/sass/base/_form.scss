@@ -1,0 +1,100 @@
+/** ------------------------------------------------------------------------------------------------
+* FORMS
+* ------------------------------------------------------------------------------------------------ */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  	-webkit-appearance: none;
+  	margin: 0;
+}
+
+
+input[type="email"],
+input[type="search"],
+input[type="number"],
+input[type="url"],
+input[type="tel"],
+input[type="text"],
+input[type="password"],
+textarea,
+select {
+	@include appearance(none);
+	background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)); /* Removing the inner shadow on iOS inputs */
+}
+
+input[type="email"],
+input[type="date"],
+input[type="search"],
+input[type="number"],
+input[type="text"],
+input[type="tel"],
+input[type="url"],
+input[type="password"],
+textarea,
+select {
+    font-size: 16px;
+    line-height: 25px;
+    border: 1px solid #ebebeb;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    outline: 0;
+    @extend .primary-font;
+    font-weight: 800;
+    border-radius: 0;
+    color: #777;
+	width: 100%;
+	max-width: 100%;
+	background-color: transparent;
+	vertical-align: middle;
+	padding: 0 12px;
+	height: 44px;
+    -webkit-transition: .2s;
+    transition: .2s;
+
+	&:focus {
+		outline:none;
+		border-color: transparent;
+	    background: #fff;
+	    -webkit-box-shadow: 0 2px 12px rgba(51,51,51,.08);
+	    box-shadow: 0 2px 12px rgba(51,51,51,.08);
+	}
+}
+input[type="search"]{
+	height: 50px;
+}
+input[type="radio"],
+input[type="checkbox"] {
+	margin-top:0px;
+	margin-right:5px;
+	vertical-align:middle;
+}
+
+.radio input[type="radio"],
+.radio-inline input[type="radio"],
+.checkbox input[type="checkbox"],
+.checkbox-inline input[type="checkbox"] {
+	position: inherit;
+	margin-left: 0;
+}
+
+
+textarea {
+	line-height: 1.4;
+	padding: 10px 15px;
+	min-height: 190px;
+}
+
+input[type="button"] {
+	&:focus {
+		outline: none;
+	}
+}
+
+select {
+	padding: 0 25px 0 10px;
+	background-image: url("assets/images/icons/icon-down-shop-action.png");
+	background-repeat: no-repeat;
+	background-position: calc(100% - 15px) 50%;
+
+	/*unittest*/
+	transition: none;
+}

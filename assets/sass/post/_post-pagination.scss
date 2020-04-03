@@ -1,0 +1,111 @@
+.yanka-pagination {
+    text-align: left;
+
+    .page-numbers {
+        padding: 0;
+        margin-bottom: 0;
+
+        li {
+            display: inline-block;
+            margin-right: 4px;
+            margin-bottom: 0;
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            span, a {
+                font-size: 14px;
+                line-height: 22px;
+                padding: 10px 13px;
+                position: relative;
+                color: #333333;
+                display: inline-block;
+                text-align: center;
+                font-weight: 800;
+                border: 1px solid #EBEBEB;
+                min-width: 44px;
+                min-height: 44px;
+                -webkit-transition: all 0.2s linear;
+                transition: all 0.2s linear;
+
+                &:before {
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    border: 0px solid #333333;
+                    -webkit-transition: border-width 0.2s linear;
+                    transition: border-width 0.2s linear;
+                }
+                &:hover {   
+                    border-color: #333333;
+                    &:before {
+                        border-width: 1px;
+                    }
+                }
+            }
+
+            .current {
+                border-color: #333333;
+                &:before {
+                    border-width: 1px;
+                }
+            }
+        }
+    }
+
+
+}
+
+.yanka-ajax-loadmore {
+    a {
+        color: #333;
+        display: inline-block;
+        text-transform: uppercase;
+        font-weight: 800;
+        padding: 9.5px 29px;
+        font-size: 14px;
+        position: relative;
+
+        &:before {
+            content: '';
+            position: absolute;
+            display: inline-block;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 1px solid #ebebeb;
+            -webkit-transition: .2s;
+            transition: .2s;
+        }
+
+        &:hover, &:focus {
+            color: #333;
+
+            &:before {
+                border-width: 2px;
+                border-color: #333;
+            }
+        }
+
+        i {
+            margin-right: 7px;
+        }
+
+        &.disabled {
+            pointer-events: none;
+            opacity: 0.3;
+        }
+    }
+}
+
+.blog-container {
+    .yanka-pagination {
+        
+    }
+}

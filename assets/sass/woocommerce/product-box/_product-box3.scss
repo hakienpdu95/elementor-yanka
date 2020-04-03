@@ -1,0 +1,26 @@
+.product-style-3{
+    .product-box {
+        .btn-wishlist .yith-wcwl-add-to-wishlist{
+            right: 10px;
+        }
+        .badge.new{
+            left: 0;
+            right: auto;
+            top: 15px;
+        }
+    }
+    .product-info{
+        text-align: center;
+    }
+    .product-btn.in-thumb{
+        bottom: 50%;
+        margin-bottom: -21px;
+    }
+    .product-list-info .btn-wishlist{
+        display: none;
+    }
+    .variation-attr{
+        right: 50%;
+        @include transform(translateX(50%));
+    }
+}

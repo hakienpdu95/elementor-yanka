@@ -1,0 +1,117 @@
+.error-404 {
+    padding-top: 179px;
+    padding-bottom: 147px;
+    height: 100%;
+
+    .image-404{
+        margin-bottom: 30px;
+    }
+    .warning-404{
+        color: white;
+        margin-bottom: 40px;
+    }
+    .sub-title {
+        font-size: 16px;
+        color: #bababa;
+        margin-bottom: 0;
+        a{
+            @extend .color-primary-color;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .search-form {
+        max-width: 767px;
+        margin: 0 auto;
+
+        .search-field {
+            height: 55px;
+            line-height: 55px;
+        }
+
+        .search-submit {
+            height: 55px;
+            line-height: 54px;
+        }
+    }
+    .return-home{
+        margin-top: 30px;
+    }
+}
+
+.error404 {
+    .page-heading {
+        background-color: #f5f5f5;
+    }
+}
+.error404 .page-content{
+    .pt-title-02 {
+        color: #EBEBEB;
+        font-size: 36px;
+        line-height: 43px;
+        font-weight: 800;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .pt-title.pt-size-large {
+        font-size: 64px;
+        line-height: 77px;
+    }    
+
+    .pt-title-02 + .pt-title {
+        margin-top: 16px;
+    }    
+    
+    p {
+        margin-top: 20px;
+        max-width: 664px;
+        margin: 0 auto;
+        
+        strong {
+            font-weight: 800;
+        }        
+    }
+
+    .pt-size-large + p {
+        margin-top: 27px;
+    }    
+}
+.pt-link, .pt-link:focus {
+    @extend .color-primary-color;
+    padding: 5px 0px 4px;
+    line-height: 1;
+    border: none;
+    outline: none;
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.pt-link:before, .pt-link:focus:before {
+    position: absolute;
+    bottom: 4px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 100%;
+    content: '';
+    color: transparent;
+    @extend .background-primary-color;
+    height: 1px;
+    transition: width 0.2s linear;
+}
+.pt-link:hover, .pt-link:focus:hover {
+    @extend .color-primary-color;
+    text-decoration: none;
+}
+.pt-link:hover:before, .pt-link:focus:hover:before {
+    width: 0;
+}

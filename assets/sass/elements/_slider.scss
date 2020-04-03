@@ -1,0 +1,9 @@
+.rev-btn, .rev-btn:visited,
+.slider-font-custom{
+	@extend .font-primary;
+}
+.yanka .tp-bullet.selected,
+.yanka .tp-bullet:hover{
+	border-color: $primary-color !important;
+	@extend .border-primary-color;
+}

@@ -1,0 +1,398 @@
+#footer-wrapper {
+    color: $footer-text-color;
+    font-size: 14px;
+    line-height: 20px;
+    
+    .vc_row {
+
+    }
+    .wpb_content_element{
+        margin-bottom: 0;
+    }
+
+    ul {
+        li {
+            margin-bottom: 0;
+        }
+    }
+    a {
+        color: $footer-text-color;
+        padding: 5px 0;
+        font-size: 16px;
+        line-height: 1.35;
+        transition: color 0.2s;
+
+        &:hover {
+            @extend .color-primary-color;
+        }
+    }
+
+    p {
+        a {
+            @extend .color-primary-color;
+        }
+    }
+    
+    .addon-title {
+        margin-bottom: 9px;
+    }
+
+    .widgettitle {
+        font-size: 18px;
+        font-weight: 800;
+        padding-bottom: 0;
+        margin-bottom: 15px;
+        text-transform: capitalize;
+        color: #333;
+        border: none;
+
+        &:after {
+            content: none;
+        }
+    }
+
+    .footer-top {
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+        .widget_nav_menu{
+            li{
+                @extend .transition3;
+                a{
+                    position: relative;
+                    color: $footer-link-color;
+                }
+                &:hover{
+                    @extend .transition3;
+                    a{
+                        @extend .color-primary-color;
+                    }
+                }
+            }
+        }
+    }
+
+    .widget_recent_post_with_image {
+        .widgettitle {
+            margin-bottom: 30px;
+        }
+    }
+
+    .footer-bottom {
+        font-size: 12px;
+        .menu li{
+            display: inline-block;
+            margin: 0;
+            line-height: 25px;
+            padding-right: 30px;
+        }
+        .copyright {
+            line-height: 29px;
+            a {
+                @extend .color-primary-color;
+            }
+        }
+    }
+
+    .copyright_footer{
+        color: #8f8f8f;
+        font-size: 12px;
+        a{
+            @extend .color-primary-color;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+    .instagram-picture:hover .hover-mask{
+        display: none;
+    }
+
+    .vc-left{
+        text-align: left;
+    }
+    .vc-right{
+        text-align: right;
+    }
+    .vc-center{
+        text-align: center;
+    }
+    .menu-hoz-left{
+        text-align: left;
+        .widget_nav_menu{
+            li{
+                display: inline-block;
+                margin: 0 20px;
+                &:first-child{
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+    .menu-hoz-right{
+        text-align: right;
+        .widget_nav_menu{
+            li{
+                display: inline-block;
+                margin: 0 20px;
+                &:last-child{
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+    .menu-hoz-center{
+        text-align: center;
+        .widget_nav_menu{
+            li{
+                display: inline-block;
+                margin: 0 20px;
+            }
+        }
+    }
+    .menu-hoz-center,
+    .menu-hoz-right,
+    .menu-hoz-left{
+        .widget_nav_menu li {
+            &:hover{
+                padding: 0;
+            }
+            a:before{
+                display: none;
+            }
+        }
+    }
+    .image-inline-block{
+        display: inline-block;
+    }
+
+    .pt-box-copyright {
+        font-size: 14px;
+    }
+
+    .popular_collections {
+        font-size: 18px;
+
+        .addon-title.title {
+            margin-bottom: 4px;
+        }
+
+        .banner-box {
+            margin-bottom: 10px;
+        }
+
+        &.banner {
+
+        }
+    }
+
+    .footer-fixed-1 {
+        &.vc_row {
+            > .container {
+                .vc_row.r-menus {
+                    margin-left: -15px;
+                    margin-right: -15px;
+                }
+            }            
+        }
+    }
+    .footer-shop {
+        background-color: #f8f8f8;
+        padding: 97px 0 78px 0;        
+        margin-top: -6px;
+        
+        &.vc_row {
+            > .container {
+                .vc_row.r-menus {
+                    margin-left: -15px;
+                    margin-right: -15px;
+                }
+            }
+        }
+    }
+}
+
+#modalProductInfo,
+#modalProductInfo-02,
+#modalProductInfo-03 {
+    display: none;
+}
+
+.wpspin-light {
+    visibility:hidden
+}
+.cb-wishlist {
+    clear:both
+}
+form.mc4wp-form {
+    > .mc4wp-form-fields {
+        position: relative;
+        margin: 0;
+        padding: 0;
+
+        p {
+            margin-bottom: 11px;
+        }
+        
+        .mc4wp-text {
+            line-height: 28px;
+            margin-top: 13px;
+        }
+
+        input[type="email"] {
+            border-radius: 0;
+            width: 100%;
+            height: 44px;
+            font-size: 16px;
+            line-height: 25px;
+            font-weight: 800;
+            padding: 3px 49px 3px 18px;
+            background: #ffffff;
+            border: 1px solid #ebebeb;
+            -webkit-box-shadow: 0px 2px 12px rgba(51, 51, 51, 0);
+            box-shadow: 0px 2px 12px rgba(51, 51, 51, 0);
+            -webkit-transition: all 0.2s;
+            transition: all 0.2s;   
+
+            &::placeholder { 
+              color: #777;
+              opacity: 1;
+            }          
+        }
+
+        button[type="submit"] {
+            position: absolute;
+            right: 0;
+            top: 0;
+            border: none;
+            background: none;
+            outline: none;
+            cursor: pointer;
+            width: 45px;
+            height: 44px;
+            line-height: inherit; 
+            padding: unset;
+            color: #333333;
+            -webkit-transition: color 0.2s linear;
+            transition: color 0.2s linear;  
+            font-size: 0;
+
+            .pt-icon {
+                position: relative;
+                top: 5px;
+                right: 1px;
+            }          
+        }
+    }
+}
+
+.policy_email {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+
+footer {
+    .yanka-payment-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+}
+
+@media (min-width: 1119px) {
+    #footer-wrapper {
+        .vc_row {
+
+        }
+    }
+}
+
+@media (min-width: 411px) {
+    footer {
+        .yanka-payment-list {
+            display: -ms-inline-flexbox;
+            display: -webkit-inline-flex;
+            display: inline-flex;
+            -webkit-flex-direction: row;
+            -ms-flex-direction: row;
+            flex-direction: row;
+            -webkit-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            -webkit-justify-content: flex-start;
+            -ms-flex-pack: start;
+            justify-content: flex-start;
+            -webkit-align-content: stretch;
+            -ms-flex-line-pack: stretch;
+            align-content: stretch;
+            -webkit-align-items: center;
+            -ms-flex-align: center;
+            align-items: center;
+            margin-left: -15px;
+            margin-top: -2px;    
+
+            li {
+                margin-left: 15px;
+                margin-top: 15px;
+            } 
+
+            img {
+                height: 18px;
+            }       
+        }
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .footer .vc_row {
+        margin: 0;
+    }
+}
+@media screen and (max-width: 767px) {
+    .footer-top{
+        > .wpb_column{
+            margin-bottom: 30px;
+            &:last-child{
+                margin-bottom: 0;
+            }
+            .wpb_column{
+                margin-bottom: 10px;
+                &:last-child{
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+    .col-footer{
+        margin-bottom: 40px;
+        &:last-child{
+            margin-bottom:0;
+        }
+    }
+    #footer-wrapper{
+        .footer-bottom{
+            text-align: center;
+            p{
+                text-align: center !important;
+            }
+            .menu li{
+                padding: 0 15px;
+            }
+        }
+    }
+    #footer-wrapper .mc4wp-form .mc4wp-form-fields{
+        .newletter-text,
+        .form-newletter input[type="submit"]{
+            margin: 0;
+        }
+    }
+
+}
+// footer custom home
+@media screen and (max-width: 767px) {
+    .footer-top{
+        background-position: left top;
+    }
+}

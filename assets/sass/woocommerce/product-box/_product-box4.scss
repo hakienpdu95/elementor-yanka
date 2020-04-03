@@ -1,0 +1,46 @@
+.product-style-4{
+    .product-box{
+    	padding: 10px;
+    	border: 1px solid #ebebeb;
+        .btn-wishlist{
+            position: static;
+            .yith-wcwl-add-to-wishlist{
+                width: 42px;
+                height: 42px;
+                a{
+                    width: 42px;
+                    height: 42px;
+                    &:before{
+                        font-size: 25px;
+                        line-height: 42px;
+                        padding-left: 9px;
+                    }
+                }
+            }
+        }
+        .product-info{
+	        text-align: center;
+	    }
+    }
+    .yanka-countdown{
+        margin: 0;
+        bottom: 50%;
+        @include transform(translateY(50%) rotateX(0deg));
+        @extend .transition4;
+    }
+    .product-btn.in-thumb{
+        bottom: 50%;
+        margin-bottom: -21px;
+    }
+    .variation-attr{
+        right: 50%;
+        @include transform(translateX(50%));
+    }
+    &:hover{
+        .yanka-countdown{
+            opacity: 0;
+            @include transform(translateY(50%) rotateX(90deg));
+            @extend .transition4;
+        }
+    }
+}

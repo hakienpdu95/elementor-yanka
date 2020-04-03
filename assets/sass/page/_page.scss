@@ -1,0 +1,32 @@
+html{
+	-ms-word-wrap: break-word;
+	word-wrap: break-word;
+}
+@media screen and (min-width: 1720px) {
+	.container-fluid{
+		margin-left: auto !important;
+		margin-right: auto !important;
+	}
+}
+@media screen and (min-width: 1240px) {
+	.container {
+	    max-width: 1200px !important;
+	}
+}
+@media screen and (max-width: 1619px) {
+	.container-fluid{
+		/*width: 1300px;*/
+	}
+}
+@media screen and (max-width: 1300px) {
+	.container-fluid{
+		/*width: 1200px;*/
+	}
+}
+
+
+@import 'maintenance';
+@import '404';
+@import 'contact';
+@import 'search';
+@import 'page-heading';

@@ -1,0 +1,85 @@
+html {
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+body {
+    font-family: $primary-font;
+    color: $color-text-main;
+    background: $white;
+    /*unittest*/
+    font-size: 14px;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 1.75;
+	  font-weight: 400;
+}
+
+p {
+	margin-bottom: 20px;
+}
+
+img {
+	height: auto;
+	max-width: 100%;
+	vertical-align: middle;
+}
+
+b, strong {
+	font-weight: 600;
+}
+
+.icon-icon-close_small:before {
+  content: "\e908"; }
+
+.icon-icon-close:before {
+  content: "\e909"; }
+
+.icon-quote:before {
+  content: "\e900"; }
+
+.icon-star:before {
+  content: "\e901";
+  color: #ebebeb; }
+
+.icon-arrow_top:before {
+  content: "\e902";
+  color: #d0d0d0; }
+
+.icon-arrow_down:before {
+  content: "\e903";
+  color: #d0d0d0; }
+
+.icon-arrow_left:before {
+  content: "\e904";
+  color: #d0d0d0; }
+
+.icon-arrow_right:before {
+  content: "\e905";
+  color: #d0d0d0; }
+
+.icon-comments:before {
+  content: "\e906"; }
+
+.icon-eye:before {
+  content: "\e907"; }
+  
+@import 'list';
+@import 'link';
+@import 'heading';
+@import 'table';
+@import 'form';
+@import 'button';
+@import 'clearing';
+@import 'helper';
+@import 'global';
+@import 'layout';
+@import 'layout_vc';
+@import 'image-effect';
+@import 'custome';
+@import 'custome-device';

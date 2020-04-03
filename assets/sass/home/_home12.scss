@@ -1,0 +1,66 @@
+header.header-12 {
+	background-color: transparent !important;
+}
+.header-12{
+	position: absolute;
+    z-index: 9;
+    width: 100%;
+    background: transparent;
+	.yanka-menu.primary-menu {
+		margin-right: 18px;
+	}
+	.wrap-header {
+		.btn-group {
+			> a {
+				color: #ffffff;
+			}
+		}
+	}
+	.yanka-menu {
+		&.primary-menu {
+			> li {
+				> a {
+					color: #ffffff;
+				}
+			}
+		}
+	}
+}
+
+
+@media screen and (min-width: 1119px) {
+	.header-12 {
+		.wrap-header {
+			.header-position {
+				&.header-center {
+					webkit-box-flex: 2;
+				    -ms-flex: 2 1 auto;
+				    flex: 2 1 auto;
+
+					.yanka-menu.primary-menu {
+						&.menu-center {
+							justify-content: flex-end;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 1025px) {
+	.header-12 {
+		&.header-wrapper {
+			background-color: white !important;
+    		position: relative;
+
+    		.wrap-header {
+    			.btn-group {
+    				> a {
+					    color: #333333;
+					}
+    			}
+    		}
+		}
+	}
+}

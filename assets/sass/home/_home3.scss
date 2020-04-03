@@ -1,0 +1,30 @@
+@media screen and (min-width: 1119px) {
+	.header-3 {
+		.wrap-header {
+			.header-position {
+				&.header-center {
+					webkit-box-flex: 2;
+				    -ms-flex: 2 1 auto;
+				    flex: 2 1 auto;
+
+					.yanka-menu.primary-menu {
+						&.menu-center {
+							justify-content: flex-end;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+@media screen and (min-width: 1025px) {
+	.header-3{
+		.header-position {
+			&.header-right {
+				.yanka-menu.primary-menu {
+					margin-right: 20px;
+				}
+			}
+		}
+	}	
+}

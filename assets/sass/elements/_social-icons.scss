@@ -1,0 +1,233 @@
+
+
+/** ------------------------------------------------------------------------------------------------
+* SOCIAL ICONS
+* ------------------------------------------------------------------------------------------------ */
+#footer-wrapper .yanka-social-box {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+
+    .yanka-social-box-title {
+        font-size: 18px;
+        line-height: 26px;
+        color: #333333;
+        font-weight: 800;        
+    }    
+
+    .yanka-social-icons {
+        padding-left: 17px;
+
+        .yanka-social-icon {
+            a {
+                padding: 7px 10px 4px;
+                margin: 0;
+                display: inline-block;
+                color: #D0D0D0;
+                -webkit-transition: color 0.2s linear;
+                transition: color 0.2s linear;
+
+                &:hover {
+                    color: #333333;
+                }
+            }
+            &:first-child {
+                a {padding-left: 0;}
+            }
+            &:last-child {
+                a {padding-right: 0;}
+            }            
+        }
+    }
+}
+.social-list-icons {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+        display: inline-block;
+
+        a {
+            border-radius: 50%;
+            padding: 6px;
+            color: #828282;
+        }
+    }
+
+}
+
+.yanka-social-icons {
+    .yanka-social-icon a{
+        display: inline-block;
+    }
+    // Align
+    &.icon-align-left{
+        justify-content: flex-start;
+    }
+    &.icon-align-center{
+        justify-content: center;
+    }
+    &.icon-align-right{
+        justify-content: flex-end;
+    }
+    // Style
+    &.icon-style-default,
+    &.icon-style-icon{
+        .yanka-social-icon{
+            a{
+                text-align: center;
+                line-height: 25px;
+                padding: 0 5px;
+                margin: 0 5px;
+            }
+            &:first-child{
+                a{
+                    padding-left: 0;
+                    margin-left:0
+                }
+            }
+            &:last-child{
+                a{
+                    padding-right: 0;
+                    margin-right:0
+                }
+            }
+        }
+    }
+    &.icon-style-icon-background{
+        .yanka-social-icon{
+            a{
+                text-align: center;
+                width: 40px;
+                height: 40px;
+                line-height: 40px;
+                background: #f6f6f6;
+                margin: 0 5px;
+            }
+            &:first-child{
+                a{
+                    padding-left: 0;
+                    margin-left:0
+                }
+            }
+            &:last-child{
+                a{
+                    padding-right: 0;
+                    margin-right:0
+                }
+            }
+        }
+    }
+    &.icon-style-icon-background-circle{
+        .yanka-social-icon{
+            a{
+                text-align: center;
+                width: 40px;
+                height: 40px;
+                line-height: 42px;
+                background: #f6f6f6;
+                border-radius: 100%;
+                margin: 0 5px;
+            }
+            &:first-child{
+                a{
+                    padding-left: 0;
+                    margin-left:0
+                }
+            }
+            &:last-child{
+                a{
+                    padding-right: 0;
+                    margin-right:0
+                }
+            }
+        }
+    }
+    &.icon-style-icon-background-border{
+        .yanka-social-icon{
+            a{
+                text-align: center;
+                width: 40px;
+                height: 40px;
+                line-height: 42px;
+                border: 1px solid #f6f6f6;
+                margin: 0 5px;
+            }
+            &:first-child{
+                a{
+                    padding-left: 0;
+                    margin-left:0
+                }
+            }
+            &:last-child{
+                a{
+                    padding-right: 0;
+                    margin-right:0
+                }
+            }
+        }
+    }
+    // Size
+    &.icon-size-default,
+    &.icon-size-small{
+        i{
+            font-size: 15px;
+        }
+    }
+    &.icon-size-medium{
+        i{
+            font-size: 17px;
+        }
+    }
+    &.icon-size-large{
+        i{
+            font-size: 19px;
+        }
+    }
+    // Color
+    &.icon-color-default,
+    &.icon-color-black{
+        .yanka-social-icon a{
+            color: black;
+            &:hover{
+                @extend .color-primary-color;
+            }
+        }
+    }
+    &.icon-color-white{
+        .yanka-social-icon a{
+            color: white;
+            &:hover{
+                @extend .color-primary-color;
+            }
+        }
+    }
+    &.icon-color-primary{
+        .yanka-social-icon a{
+            @extend .color-primary-color;
+        }
+    }
+}
+
+@media (min-width: 791px) {
+    footer {
+        .yanka-social-box {
+            margin-top: 11px;
+        }
+    }
+}

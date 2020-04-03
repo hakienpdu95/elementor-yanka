@@ -1,0 +1,53 @@
+/* ==========================================================================
+   1.5 TABLE
+   ========================================================================== */
+body.page-template-default:not(.woocommerce-checkout),
+body.page-template-default:not(.woocommerce-cart),
+body.page-template-default:not(.woocommerce-wishlist),
+body.single-post,
+figure.wp-block-table,
+body.home.blog article {
+	table, th, td {
+	    border: 1px solid;
+	    border-color: #E6E6E6;
+	}
+}
+
+body.page-template-default.woocommerce-checkout,
+body.page-template-default.woocommerce-cart,
+body.page-template-default.woocommerce-wishlist {
+	table, th, td {
+	    border: unset;
+    	border-color: unset;
+	}
+}
+
+table {
+	width: 100%;
+	margin-bottom: 35px;
+	line-height: 1.4;
+
+	th {
+		padding: 15px 10px;
+		text-align: left;
+		font-weight: 600;
+		text-transform:uppercase;
+		color: $heading-color;
+		vertical-align: middle;
+		border: none;
+	}
+
+	td {
+		padding: 15px 12px;
+		border: none;
+		text-align: left;
+	}
+
+	tbody,
+	tfoot {
+
+		th {
+   			text-transform: none;
+		}
+	}
+}

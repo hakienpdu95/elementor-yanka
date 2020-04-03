@@ -1,0 +1,280 @@
+.term-description {
+    margin-bottom: 30px;
+}
+
+.shop-action {
+
+    .shop-action-inner {
+        color: #686868;
+        margin-bottom: 22px;
+        padding-bottom: 10px;
+    }
+    .wc-switch{
+        padding-top: 5px;
+        margin-left: 30px;
+        
+        a {
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+        span{
+            line-height: 22px;
+            font-size: 14px;
+            font-weight: 800;
+            color: #333333;
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        .grid {
+            .icon-listing-three {
+                > span {
+                    width: 7px;
+                    height: 12px;
+                    display: block;
+                    float: left;
+                    border: 1px solid #d0d0d0;
+                    -webkit-transition: border .2s;
+                    transition: border .2s;
+
+                    &:not(:first-child) {
+                        margin-left: 1px;
+                    }
+                }
+            }
+
+            &.active .icon-listing-three > span {
+                border-color: #333;
+            }
+        }
+    }
+}
+.shop-action-bottom {
+    border-top: 1px solid #E6E6E6;
+    font-size: 14px;
+    color: #000000;
+    clear: both;
+    margin-top: 30px;
+
+    &.container {
+        max-width: 1400px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .woocommerce-result-count {
+        float: left;
+        margin-bottom: 0;
+    }
+
+}
+
+.action-right {
+    form {
+        float: left;
+        margin-right: 35px;
+        font-size: 14px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    select {
+        color: black;
+        display: inline-block;
+        border: none;
+        border-bottom: 2px solid #ebebeb;
+        width: auto;
+        background-position: 100% 40%;
+        padding-left: 2px;
+        padding-right: 20px;
+        padding-bottom: 4px;
+        height: auto;
+        font-size: 14px;
+        line-height: 24px;
+        cursor: pointer;
+        vertical-align: middle;
+    }
+    .show-products-number select{
+        padding-bottom: 1px;
+        position: relative;
+        top: 4px;
+    }
+}
+
+.woocommerce-ordering {
+    select {
+        max-width: 200px;
+        position: relative;
+        top: 4px;
+    }
+
+    span {
+        position: relative;
+        top: 1px;
+        font-weight: 800;
+        font-size: 14px;
+        color: #333333;
+        line-height: 22px;
+    }
+}
+.show-products-number {
+    span {
+        position: relative;
+        top: 1px;
+        font-weight: 800;
+        font-size: 14px;
+        color: #333333;
+        line-height: 22px;
+    }    
+}
+
+
+.wc-switch {
+    > a {
+        display: inline-block;
+        width: 19px;
+        width: auto;
+        height: 19px;
+        margin-right: 10px;
+        padding-top: 5px;
+        
+        .icon-view {
+            width: 100%;
+            height: 100%;
+            display: inline-block;
+            background-size: auto;
+            background-attachment: scroll;
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+    }
+
+    .per-row-1 {
+
+        &.list {
+            &:hover {
+                > span {
+                    background-color: #333;
+                }
+            }
+
+            > span {
+                width: 24px;
+                height: 5px;
+                display: block;
+                position: relative;
+                background-color: #d0d0d0;
+                -webkit-transition: background-color .2s;
+                transition: background-color .2s; 
+
+                &:before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 6px;
+                    background-color: #fff;
+                    display: block;
+                    width: 2px;
+                    height: 5px;
+                }
+
+                &:not(:first-child) {
+                    margin-top: 2px;
+                }
+            }
+        }
+
+        .icon-view {
+            background-image: url('assets/images/icons/view-list.png');
+        }
+
+        &.active {
+            > span {
+                background-color: #333;
+            }
+            
+            .icon-view {
+                background-image: url('assets/images/icons/view-list-hover.png');
+            }
+        }
+    }
+
+    .per-row-2 {
+        .icon-view {
+            background-image: url('assets/images/icons/view-2.png');
+        }
+
+        &.active {
+            .icon-view {
+                background-image: url('assets/images/icons/view-2-hover.png');
+            }
+        }
+    }
+
+    .per-row-3 {
+        .icon-view {
+            background-image: url('assets/images/icons/view-3.png');
+        }
+
+        &.grid {
+            .icon-listing-three {
+                &:hover {
+                    > span {
+                        border-color: #333;
+                    }
+                }
+                > span {
+                    width: 7px;
+                    height: 12px;
+                    display: block;
+                    float: left;
+                    border: 1px solid #d0d0d0;
+                    -webkit-transition: border .2s;
+                    transition: border .2s;
+
+                    &:not(:first-child) {
+                        margin-left: 1px;
+                    }
+                } 
+            }
+        }
+
+        &.active {
+            .icon-view {
+                background-image: url('assets/images/icons/view-3-hover.png');
+            }
+            .icon-listing-three {
+                > span {
+                    border-color: #333;
+                }
+            }
+        }
+    }
+
+    .per-row-4,
+    .per-row-5,
+    .per-row-6 {
+        .icon-view {
+            background-image: url('assets/images/icons/view-4.png');
+        }
+
+        &.active {
+            .icon-view {
+                background-image: url('assets/images/icons/view-4-hover.png');
+            }
+        }
+    }
+}
+
+.shop-container {
+    #main-content.col-md-12 {
+        .shop-action {
+            .right-xs {
+                justify-content: space-between;
+            }
+        }
+    }
+}
